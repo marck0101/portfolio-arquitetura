@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tais L. Müller</title>
+  <meta name="description" content="Portfólio de arquitetura: projetos residenciais, comerciais e interiores.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { DEFAULT: '#D4A373', 50: '#FBF6EE', 100: '#F7EEDD', 200: '#EAD7BB', 300: '#DCC1A0', 400: '#D4A373', 500: '#B88556' }
+          },
+          fontFamily: {
+            display: ['Sora', 'sans-serif'],
+            sans: ['Inter', 'system-ui', 'Avenir', 'Helvetica', 'Arial', 'sans-serif']
+          },
+          boxShadow: { soft: '0 10px 40px rgba(0,0,0,.06)' }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body class="font-sans">
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-neutral-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="index.html" class="font-display font-semibold text-lg tracking-tight">Tais L. Müller</a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="index.html" class="hover:text-brand-500">Home</a>
+        <a href="projetos.html" class="hover:text-brand-500">Projetos</a>
+        <a href="servicos.html" class="hover:text-brand-500">Serviços</a>
+        <a href="sobre.html" class="hover:text-brand-500">Sobre</a>
+        <a href="contato.html" class="hover:text-brand-500">Contato</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="projetos.html"
+          class="hidden sm:inline-flex px-4 py-2 rounded-lg border border-neutral-300 hover:bg-neutral-50">Ver
+          portfólio</a>
+        <a href="contato.html" class="px-4 py-2 rounded-lg bg-brand-400 hover:bg-brand-500 text-white">Fale conosco</a>
+        <button id="menuBtn" class="md:hidden text-2xl ml-2" aria-label="Abrir menu">☰</button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-neutral-200">
+      <div class="px-4 py-3 space-y-2">
+        <a href="index.html" class="block">Home</a>
+        <a href="projetos.html" class="block">Projetos</a>
+        <a href="servicos.html" class="block">Serviços</a>
+        <a href="sobre.html" class="block">Sobre</a>
+        <a href="contato.html" class="block">Contato</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="reveal">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <span
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm bg-brand-50 text-brand-600 ring-1 ring-brand-200">Arquitetura
+            contemporânea</span>
+          <h1 class="mt-4 font-display text-4xl md:text-6xl leading-[1.05] tracking-tight text-neutral-900">
+            Espaços atemporais, <span class="text-brand-400">humanos</span> e luminosos.
+          </h1>
+          <p class="mt-4 text-lg text-neutral-700 max-w-xl">
+            Projetos residenciais, comerciais e interiores com identidade e precisão técnica.
+          </p>
+          <div class="mt-6 flex gap-3">
+            <a href="projetos.html" class="px-5 py-3 rounded-xl bg-brand-400 hover:bg-brand-500 text-white">Ver
+              portfólio</a>
+            <a href="contato.html" class=" px-5 py-3 rounded-xl border border-neutral-300 bg-white hover:bg-neutral-50">
+              Solicitar orçamento
+            </a>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="./img/new_render.png" alt="Projeto residencial contemporâneo"
+            class="rounded-3xl shadow-soft w-full h-[420px] object-cover">
+          <div
+            class="absolute -bottom-6 -left-6 bg-white/90 backdrop-blur rounded-2xl border border-neutral-200 p-4 shadow">
+            <div class="text-sm">
+              <div class="font-semibold">Projeto Acolher</div>
+              <div class="text-neutral-500">Florianópolis • 2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="flex items-end justify-between">
+          <h2 class="font-display text-2xl md:text-3xl">Projetos em destaque</h2>
+          <a href="projetos.html" class="text-sm hover:text-brand-600">Ver todos</a>
+        </div>
+        <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <a href="projeto.html"
+            class="bg-white rounded-2xl border border-neutral-200 overflow-hidden hover:shadow-lg transition block">
+            <img src="./img/cozinha.png" class="h-56 w-full object-cover" alt="Projeto residencial contemporâneo">
+            <div class="p-5">
+              <div class="flex items-center justify-between">
+                <div class="font-semibold">Apartamento Horizonte</div>
+                <span class="text-xs px-2 py-0.5 rounded-full bg-neutral-100 border border-neutral-200">2024</span>
+              </div>
+              <div class="text-sm text-neutral-600">Florianópolis</div>
+            </div>
+          </a>
+          <a href="projeto.html"
+            class="bg-white rounded-2xl border border-neutral-200 overflow-hidden hover:shadow-lg transition block">
+            <!-- <img src="/img/estudio.jpg" alt="Projeto comercial minimalista" class="h-56 w-full object-cover"> -->
+            <img src="./img/new_render.png" class="h-56 w-full object-cover" alt="Projeto residencial contemporâneo">
+
+            <div class="p-5">
+              <div class="flex items-center justify-between">
+                <div class="font-semibold">Estúdio Linear</div>
+                <span class="text-xs px-2 py-0.5 rounded-full bg-neutral-100 border border-neutral-200">2023</span>
+              </div>
+              <div class="text-sm text-neutral-600">Florianópolis</div>
+            </div>
+          </a>
+
+          <a href="projeto.html"
+            class="bg-white rounded-2xl border border-neutral-200 overflow-hidden hover:shadow-lg transition block">
+            <img src="./img/projeto-09_II.png" class="h-56 w-full object-cover" alt="Projeto residencial contemporâneo">
+            <div class="p-5">
+              <div class="flex items-center justify-between">
+                <div class="font-semibold">Suíte Master</div>
+                <span class="text-xs px-2 py-0.5 rounded-full bg-neutral-100 border border-neutral-200">2022</span>
+              </div>
+              <div class="text-sm text-neutral-600">Itajaí</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <h2 class="font-display text-2xl md:text-3xl">Processo</h2>
+        <ol class="grid md:grid-cols-5 gap-4 mt-8">
+          <li class="bg-white rounded-2xl border border-neutral-200 p-4">
+            <div class="text-xs uppercase tracking-wide text-neutral-500">Etapa 1</div>
+            <div class="font-semibold">Briefing</div>
+            <p class="text-sm text-neutral-600 mt-1">Levantamento de necessidades e referências.</p>
+          </li>
+          <li class="bg-white rounded-2xl border border-neutral-200 p-4">
+            <div class="text-xs uppercase tracking-wide text-neutral-500">Etapa 2</div>
+            <div class="font-semibold">Conceito</div>
+            <p class="text-sm text-neutral-600 mt-1">Diretrizes espaciais e materiais.</p>
+          </li>
+          <li class="bg-white rounded-2xl border border-neutral-200 p-4">
+            <div class="text-xs uppercase tracking-wide text-neutral-500">Etapa 3</div>
+            <div class="font-semibold">Projeto</div>
+            <p class="text-sm text-neutral-600 mt-1">Desenvolvimento e compatibilização.</p>
+          </li>
+          <li class="bg-white rounded-2xl border border-neutral-200 p-4">
+            <div class="text-xs uppercase tracking-wide text-neutral-500">Etapa 4</div>
+            <div class="font-semibold">Executivo</div>
+            <p class="text-sm text-neutral-600 mt-1">Detalhamento técnico para obra.</p>
+          </li>
+          <li class="bg-white rounded-2xl border border-neutral-200 p-4">
+            <div class="text-xs uppercase tracking-wide text-neutral-500">Etapa 5</div>
+            <div class="font-semibold">Obra</div>
+            <p class="text-sm text-neutral-600 mt-1">Acompanhamento e assistência técnica.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <h2 class="font-display text-2xl md:text-3xl">Depoimentos</h2>
+        <div class="mt-6 grid md:grid-cols-3 gap-6">
+          <article class="rounded-2xl bg-white border border-neutral-200 p-5">
+            <div class="flex items-center justify-between">
+              <div class="font-semibold">Marina S.</div>
+              <div class="text-yellow-500" aria-label="Nota 5 de 5">★★★★★</div>
+            </div>
+            <div class="text-sm text-neutral-600">Jurerê, Florianópolis</div>
+            <p class="text-neutral-800 mt-2">Projeto impecável e execução precisa.</p>
+          </article>
+          <article class="rounded-2xl bg-white border border-neutral-200 p-5">
+            <div class="flex items-center justify-between">
+              <div class="font-semibold">Carlos A.</div>
+              <div class="text-yellow-500" aria-label="Nota 5 de 5">★★★★★</div>
+            </div>
+            <div class="text-sm text-neutral-600">Trindade, Florianópolis</div>
+            <p class="text-neutral-800 mt-2">Interiores elegantes e funcionais.</p>
+          </article>
+          <article class="rounded-2xl bg-white border border-neutral-200 p-5 hidden" data-review="extra">
+            <div class="flex items-center justify-between">
+              <div class="font-semibold">Patrícia R.</div>
+              <div class="text-yellow-500" aria-label="Nota 5 de 5">★★★★★</div>
+            </div>
+            <div class="text-sm text-neutral-600">Centro, Florianópolis</div>
+            <p class="text-neutral-800 mt-2">Transformaram nosso apartamento.</p>
+          </article>
+        </div>
+        <div class="text-center mt-6"><button id="moreReviews"
+            class="px-4 py-2 rounded-lg bg-white border border-neutral-300 hover:bg-neutral-50">Ver mais</button></div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="bg-white border border-neutral-200 rounded-3xl p-8 md:p-12 text-center shadow-soft">
+          <h3 class="font-display text-2xl md:text-3xl">Vamos projetar algo incrível?</h3>
+          <p class="text-neutral-700 mt-2">Conte sobre seu terreno, reforma ou interior. Respondemos rápido.</p>
+          <div class="mt-5 flex justify-center gap-3">
+            <a href="contato.html" class="px-5 py-3 rounded-xl bg-brand-400 hover:bg-brand-500 text-white">Falar com o
+              estúdio</a>
+            <button id="waBtn"
+              class="px-5 py-3 rounded-xl border border-neutral-300 bg-white hover:bg-neutral-50">WhatsApp</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-neutral-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-neutral-600">
+        <div>© 2025 Tais L. Müller. Todos os direitos reservados.</div>
+        <div class="flex items-center gap-4">
+          <a href="https://www.instagram.com/arquiteta.taismuller/" class="hover:text-brand-500" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="#" class="hover:text-brand-500" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="sitemap.xml" class="hover:text-brand-500">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
