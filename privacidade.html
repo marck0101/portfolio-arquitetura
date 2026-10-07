@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidade | Taís Regina Müller — Arquiteta</title>
+  <meta name="description" content="Como a arquiteta Taís Regina Müller trata os dados de contato e de navegação deste site, conforme a LGPD.">
+  <meta name="author" content="Taís Regina Müller">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#74424e">
+  <link rel="canonical" href="https://taismuller-arquiteta.netlify.app/privacidade.html">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Taís Regina Müller Arquitetura">
+  <meta property="og:title" content="Política de Privacidade | Taís Regina Müller — Arquiteta">
+  <meta property="og:description" content="Como a arquiteta Taís Regina Müller trata os dados de contato e de navegação deste site, conforme a LGPD.">
+  <meta property="og:url" content="https://taismuller-arquiteta.netlify.app/privacidade.html">
+  <meta property="og:image" content="https://taismuller-arquiteta.netlify.app/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fonte não bloqueante: o texto aparece com a fonte do sistema e troca quando a web font chega -->
+  <link rel="stylesheet" media="print" onload="this.media='all'"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@500;600;700&display=swap">
+  <noscript><link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@500;600;700&display=swap"></noscript>
+  <link rel="stylesheet" href="assets/css/tailwind.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Google Tag Manager — só carrega com consentimento do visitante (LGPD).
+       O banner de cookies fica em assets/js/script.js e chama window.loadAnalytics(). -->
+  <script>
+    (function (w, d, id) {
+      w.dataLayer = w.dataLayer || [];
+      function gtag() { w.dataLayer.push(arguments); }
+      gtag("consent", "default", {
+        analytics_storage: "denied", ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied"
+      });
+      var loaded = false;
+      function load() {
+        if (loaded) return; loaded = true;
+        gtag("consent", "update", { analytics_storage: "granted" });
+        w.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var j = d.createElement("script"); j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + id;
+        d.head.appendChild(j);
+      }
+      w.loadAnalytics = load;
+      var consent = null;
+      try { consent = localStorage.getItem("cookieConsent"); } catch (e) {}
+      if (consent === "granted") {
+        var idle = function () { (w.requestIdleCallback || function (cb) { setTimeout(cb, 1); })(load, { timeout: 2000 }); };
+        if (d.readyState === "complete") idle(); else w.addEventListener("load", idle);
+      }
+    })(window, document, "GTM-N4J8VN6Z");
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body class="font-sans">
+
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-neutral-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="index.html" class="font-display font-semibold text-lg tracking-tight">Taís Regina Müller</a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="index.html" class="hover:text-brand-500">Home</a>
+        <a href="projetos.html" class="hover:text-brand-500">Projetos</a>
+        <a href="servicos.html" class="hover:text-brand-500">Serviços</a>
+        <a href="sobre.html" class="hover:text-brand-500">Sobre</a>
+        <a href="contato.html" class="hover:text-brand-500">Contato</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="projetos.html"
+          class="hidden sm:inline-flex px-4 py-2 rounded-lg border border-neutral-300 hover:bg-neutral-50">
+          Ver portfólio</a>
+        <a href="contato.html" class="px-4 py-2 rounded-lg text-white hover:opacity-90 transition"
+          style="background-color: #74424e;">
+          Fale conosco
+        </a>
+        <button id="menuBtn" class="md:hidden text-2xl ml-2" aria-label="Abrir menu" aria-controls="mobileMenu"
+          aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-neutral-200">
+      <div class="px-4 py-3 space-y-2">
+        <a href="index.html" class="block">Home</a>
+        <a href="projetos.html" class="block">Projetos</a>
+        <a href="servicos.html" class="block">Serviços</a>
+        <a href="sobre.html" class="block">Sobre</a>
+        <a href="contato.html" class="block">Contato</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h1 class="font-display text-3xl md:text-5xl tracking-tight">Política de Privacidade</h1>
+        <p class="text-sm text-neutral-500 mt-2">Última atualização: 7 de outubro de 2026</p>
+        <p class="text-neutral-700 mt-6">Esta política explica quais dados pessoais são tratados neste site, para quê
+          e quais são os seus direitos.</p>
+        <div class="policy mt-8 space-y-8 text-neutral-800">
+          <section>
+            <h2 class="font-display text-xl md:text-2xl mb-3">1. Quem é a responsável pelos seus dados</h2>
+            <p>Este site pertence a <strong>Taís Regina Müller</strong>, arquiteta, com atuação em São Martinho - RS e
+              atendimento online. Ela é a controladora dos dados pessoais tratados aqui, nos termos da Lei Geral de
+              Proteção de Dados (Lei nº 13.709/2018 — LGPD).</p>
+            <p>Contato para assuntos de privacidade: <a href="mailto:taisreginamuller@gmail.com">taisreginamuller@gmail.com</a>.</p>
+          </section>
+          <section>
+            <h2 class="font-display text-xl md:text-2xl mb-3">2. Dados de contato (formulário, e-mail e WhatsApp)</h2>
+            <p>Quando você entra em contato, recebemos os dados que você mesmo informa: <strong>nome, e-mail,
+              telefone, assunto e mensagem</strong>.</p>
+            <ul>
+              <li><strong>Finalidade:</strong> exclusivamente responder ao seu contato e dar seguimento ao seu pedido
+                (por exemplo, enviar orçamento, proposta ou agendar uma conversa).</li>
+              <li><strong>Base legal:</strong> procedimentos preliminares a um contrato, a seu pedido (art. 7º, V, da
+                LGPD).</li>
+              <li><strong>Como funciona:</strong> o site não armazena o formulário. Ao enviar, o seu próprio aplicativo
+                de e-mail é aberto com a mensagem pronta; no botão de WhatsApp, a conversa acontece pelo aplicativo do
+                WhatsApp.</li>
+              <li><strong>Não</strong> usamos seus dados de contato para enviar publicidade sem a sua autorização e
+                <strong>não</strong> os vendemos ou repassamos a terceiros.</li>
+            </ul>
+          </section>
+          <section>
+            <h2 class="font-display text-xl md:text-2xl mb-3">3. Dados de navegação (Google Analytics 4 e Microsoft Clarity)</h2>
+            <p>Somente se você aceitar os cookies de análise, usamos o <strong>Google Analytics 4</strong> e o
+              <strong>Microsoft Clarity</strong>, carregados pelo Google Tag Manager, para entender como o site é usado e
+              poder melhorá-lo.</p>
+            <ul>
+              <li><strong>O que é coletado:</strong> páginas visitadas, tempo de permanência, cliques e rolagem, origem
+                do acesso (por exemplo, busca ou Instagram), tipo de dispositivo e navegador e localização aproximada
+                (cidade/região). O Clarity também gera mapas de calor e gravações de sessão para mostrar como as páginas
+                são usadas; por padrão, ele oculta o que é digitado em campos de formulário.</li>
+              <li><strong>Finalidade:</strong> estatísticas de uso e melhoria do conteúdo, da navegação e do
+                desempenho do site. Esses dados não são usados para identificar você pessoalmente nem para publicidade.
+              </li>
+              <li><strong>Base legal:</strong> consentimento (art. 7º, I, da LGPD), que você pode retirar a qualquer
+                momento.</li>
+            </ul>
+          </section>
+          <section>
+            <h2 class="font-display text-xl md:text-2xl mb-3">4. Cookies</h2>
+            <ul>
+              <li><strong>Essencial:</strong> guardamos no seu navegador apenas a sua escolha sobre cookies
+                (<code>cookieConsent</code>), para não perguntar de novo a cada visita.</li>
+              <li><strong>Análise (opcionais):</strong> cookies do Google Analytics (como <code>_ga</code>) e do
+                Microsoft Clarity (como <code>_clck</code> e <code>_clsk</code>). Só são usados depois que você clica
+                em “Aceitar”.</li>
+            </ul>
+            <p>Você pode mudar sua escolha a qualquer momento em
+              <button type="button" data-cookie-prefs class="underline hover:text-brand-500">preferências de
+                cookies</button>, também disponível no rodapé de todas as páginas.</p>
+          </section>
+          <section>
+            <h2 class="font-display text-xl md:text-2xl mb-3">5. Compartilhamento e transferência internacional</h2>
+            <p>Para que o site funcione, alguns dados são tratados por fornecedores, cada um com sua própria política
+              de privacidade:</p>
+            <ul>
+              <li><strong>Google</strong> (Google Analytics e Google Tag Manager) e <strong>Microsoft</strong>
+                (Clarity) — apenas com o seu consentimento;</li>
+              <li><strong>Netlify</strong>, empresa que hospeda o site, que registra dados técnicos de acesso (como
+                endereço IP) por segurança;</li>
+              <li>o seu provedor de e-mail e o <strong>WhatsApp</strong>, quando você escolhe esses canais para falar
+                conosco.</li>
+            </ul>
+            <p>Esses fornecedores podem armazenar dados fora do Brasil, especialmente nos Estados Unidos, com as
+              garantias contratuais previstas no art. 33 da LGPD.</p>
+          </section>
+          <section>
+            <h2 class="font-display text-xl md:text-2xl mb-3">6. Por quanto tempo guardamos</h2>
+            <ul>
+              <li><strong>Dados de contato:</strong> pelo tempo necessário para atender ao seu pedido. Se houver
+                contratação, pelo prazo exigido por obrigações legais e contratuais; caso contrário, são excluídos
+                quando não forem mais necessários ou quando você pedir.</li>
+              <li><strong>Dados de navegação:</strong> pelo período configurado em cada ferramenta (até 14 meses no
+                Google Analytics e até 13 meses no Microsoft Clarity).</li>
+            </ul>
+          </section>
+          <section>
+            <h2 class="font-display text-xl md:text-2xl mb-3">7. Seus direitos</h2>
+            <p>Pela LGPD (art. 18), você pode, a qualquer momento e gratuitamente:</p>
+            <ul>
+              <li>confirmar se tratamos seus dados e acessá-los;</li>
+              <li>corrigir dados incompletos, inexatos ou desatualizados;</li>
+              <li>pedir a anonimização, o bloqueio ou a exclusão de dados desnecessários;</li>
+              <li>pedir a portabilidade dos seus dados;</li>
+              <li>saber com quem seus dados foram compartilhados;</li>
+              <li>retirar o consentimento dado para os cookies de análise.</li>
+            </ul>
+            <p>Para exercer seus direitos, escreva para
+              <a href="mailto:taisreginamuller@gmail.com">taisreginamuller@gmail.com</a>. Respondemos em até 15 dias.
+              Você também pode apresentar reclamação à Autoridade Nacional de Proteção de Dados (ANPD).</p>
+          </section>
+          <section>
+            <h2 class="font-display text-xl md:text-2xl mb-3">8. Segurança</h2>
+            <p>Adotamos medidas razoáveis para proteger seus dados, como conexão segura (HTTPS) em todo o site e
+              acesso restrito às mensagens recebidas.</p>
+          </section>
+          <section>
+            <h2 class="font-display text-xl md:text-2xl mb-3">9. Alterações nesta política</h2>
+            <p>Esta política pode ser atualizada. A data da última atualização fica sempre no topo desta página.</p>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="border-t border-neutral-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-neutral-600">
+        <div>© <span data-year>2026</span> Taís Regina Müller. Todos os direitos reservados.</div>
+        <div class="flex items-center gap-4">
+          <a href="https://www.instagram.com/arquiteta.taismuller/" class="hover:text-brand-500" target="_blank"
+            rel="noopener noreferrer">Instagram</a>
+          <a href="privacidade.html" class="hover:text-brand-500">Privacidade</a>
+          <button type="button" data-cookie-prefs class="hover:text-brand-500">Cookies</button>
+          <a href="sitemap.xml" class="hover:text-brand-500">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

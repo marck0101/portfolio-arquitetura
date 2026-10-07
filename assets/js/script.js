@@ -69,6 +69,44 @@ document.addEventListener('DOMContentLoaded',()=>{
     });
   }
 
+  // Banner de cookies (LGPD) — GA4/Clarity (via GTM) só carregam após "Aceitar".
+  // O carregador do GTM fica no <head> de cada página (window.loadAnalytics).
+  const CONSENT_KEY='cookieConsent';
+  const getConsent=()=>{try{return localStorage.getItem(CONSENT_KEY)}catch(e){return null}};
+  const setConsent=v=>{try{localStorage.setItem(CONSENT_KEY,v)}catch(e){}};
+  function clearAnalyticsCookies(){
+    const host=location.hostname;
+    document.cookie.split(';').map(c=>c.split('=')[0].trim())
+      .filter(n=>/^(_ga|_gid|_clck|_clsk|CLID|MUID)/.test(n))
+      .forEach(n=>{[host,'.'+host,''].forEach(d=>{document.cookie=`${n}=; Max-Age=0; path=/${d?'; domain='+d:''}`})});
+  }
+  function showCookieBanner(){
+    if(document.getElementById('cookieBanner'))return;
+    const el=document.createElement('div');
+    el.id='cookieBanner';
+    el.setAttribute('role','dialog');
+    el.setAttribute('aria-live','polite');
+    el.setAttribute('aria-label','Preferências de cookies');
+    el.className='fixed bottom-4 left-4 right-4 md:left-auto md:max-w-md z-[60] bg-white border border-neutral-200 rounded-2xl shadow-soft p-5 text-sm text-neutral-700';
+    el.innerHTML=`<p>Usamos cookies de análise (Google Analytics e Microsoft Clarity) para entender como o site é usado e melhorá-lo. Eles só são ativados se você aceitar. <a href="privacidade.html" class="underline hover:text-brand-500">Política de Privacidade</a>.</p>
+      <div class="mt-4 flex gap-3 justify-end">
+        <button type="button" data-consent="denied" class="px-4 py-2 rounded-lg border border-neutral-300 bg-white hover:bg-neutral-50">Recusar</button>
+        <button type="button" data-consent="granted" class="px-4 py-2 rounded-lg text-white hover:opacity-90 transition" style="background-color:#74424e">Aceitar</button>
+      </div>`;
+    el.addEventListener('click',e=>{
+      const choice=e.target.closest('[data-consent]')?.dataset.consent;
+      if(!choice)return;
+      const previous=getConsent();
+      setConsent(choice);
+      el.remove();
+      if(choice==='granted'){window.loadAnalytics?.()}
+      else if(previous==='granted'){clearAnalyticsCookies();location.reload()}
+    });
+    document.body.appendChild(el);
+  }
+  if(!getConsent())showCookieBanner();
+  document.querySelectorAll('[data-cookie-prefs]').forEach(b=>b.addEventListener('click',showCookieBanner));
+
   // WhatsApp CTA — na página de contato usa o que já foi digitado no formulário
   const waBtn=document.getElementById('waBtn');
   if(waBtn){ waBtn.addEventListener('click',()=>{

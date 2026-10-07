@@ -43,28 +43,37 @@
     ]
   }
   </script>
-  <!-- Google Tag Manager — carregado após o load (fora do caminho crítico de renderização) -->
+  <!-- Google Tag Manager — só carrega com consentimento do visitante (LGPD).
+       O banner de cookies fica em assets/js/script.js e chama window.loadAnalytics(). -->
   <script>
     (function (w, d, id) {
       w.dataLayer = w.dataLayer || [];
-      w.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      function gtag() { w.dataLayer.push(arguments); }
+      gtag("consent", "default", {
+        analytics_storage: "denied", ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied"
+      });
+      var loaded = false;
       function load() {
+        if (loaded) return; loaded = true;
+        gtag("consent", "update", { analytics_storage: "granted" });
+        w.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
         var j = d.createElement("script"); j.async = true;
         j.src = "https://www.googletagmanager.com/gtm.js?id=" + id;
         d.head.appendChild(j);
       }
-      function idle() { (w.requestIdleCallback || function (cb) { setTimeout(cb, 1); })(load, { timeout: 2000 }); }
-      if (d.readyState === "complete") idle(); else w.addEventListener("load", idle);
+      w.loadAnalytics = load;
+      var consent = null;
+      try { consent = localStorage.getItem("cookieConsent"); } catch (e) {}
+      if (consent === "granted") {
+        var idle = function () { (w.requestIdleCallback || function (cb) { setTimeout(cb, 1); })(load, { timeout: 2000 }); };
+        if (d.readyState === "complete") idle(); else w.addEventListener("load", idle);
+      }
     })(window, document, "GTM-N4J8VN6Z");
   </script>
   <!-- End Google Tag Manager -->
 </head>
 
 <body class="font-sans">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4J8VN6Z" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
   <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-neutral-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
@@ -130,6 +139,8 @@
         <div class="flex items-center gap-4">
           <a href="https://www.instagram.com/arquiteta.taismuller/" class="hover:text-brand-500" target="_blank"
             rel="noopener noreferrer">Instagram</a>
+          <a href="privacidade.html" class="hover:text-brand-500">Privacidade</a>
+          <button type="button" data-cookie-prefs class="hover:text-brand-500">Cookies</button>
           <a href="sitemap.xml" class="hover:text-brand-500">Sitemap</a>
         </div>
       </div>
