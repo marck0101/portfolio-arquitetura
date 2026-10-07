@@ -1,9 +1,15 @@
 
+const WHATSAPP = '5555996341317'; // (55) 99634-1317 — wa.me não aceita "+" nem espaços
+const EMAIL = 'taisreginamuller@gmail.com';
+
 const observer=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.12});
 document.addEventListener('DOMContentLoaded',()=>{
   document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
   const btn=document.querySelector('#menuBtn'),menu=document.querySelector('#mobileMenu');
-  if(btn&&menu){btn.addEventListener('click',()=>menu.classList.toggle('hidden'))}
+  if(btn&&menu){btn.addEventListener('click',()=>{const open=menu.classList.toggle('hidden')===false;btn.setAttribute('aria-expanded',String(open))})}
+
+  // Ano do rodapé
+  document.querySelectorAll('[data-year]').forEach(el=>{el.textContent=new Date().getFullYear()});
 
   // Filter (projects)
   const wrap=document.querySelector('[data-filter-wrap]');
@@ -45,11 +51,32 @@ document.addEventListener('DOMContentLoaded',()=>{
     document.getElementById('lbClose')?.addEventListener('click',()=>lb.classList.remove('active'));
   }
 
-  // More reviews
-  const moreReviews=document.getElementById('moreReviews');
-  if(moreReviews){ moreReviews.addEventListener('click',()=>{document.querySelectorAll('[data-review="extra"]').forEach(el=>el.classList.remove('hidden'));moreReviews.classList.add('hidden');}); }
+  // Formulário de contato → abre o e-mail do visitante com a mensagem pronta
+  const form=document.getElementById('contactForm');
+  if(form){
+    form.addEventListener('submit',e=>{
+      e.preventDefault();
+      const d=Object.fromEntries(new FormData(form).entries());
+      const subject=d.assunto?.trim() || 'Orçamento de projeto';
+      const body=[
+        `Nome: ${d.nome||''}`,
+        `E-mail: ${d.email||''}`,
+        d.telefone ? `Telefone: ${d.telefone}` : '',
+        '',
+        d.mensagem||'',
+      ].filter((l,i)=>l!==''||i===3).join('\n');
+      window.location.href=`mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+  }
 
-  // WhatsApp CTA
+  // WhatsApp CTA — na página de contato usa o que já foi digitado no formulário
   const waBtn=document.getElementById('waBtn');
-  if(waBtn){ waBtn.addEventListener('click',()=>{const phone='+555596341317';const text=encodeURIComponent('Olá! Gostaria de um orçamento para um projeto de arquitetura.');window.open(`https://wa.me/${phone}?text=${text}`,'_blank');}); }
+  if(waBtn){ waBtn.addEventListener('click',()=>{
+    let text='Olá! Gostaria de um orçamento para um projeto de arquitetura.';
+    if(form){
+      const nome=form.elements['nome']?.value.trim(), assunto=form.elements['assunto']?.value.trim(), msg=form.elements['mensagem']?.value.trim();
+      if(nome||assunto||msg) text=`Olá! ${nome?`Sou ${nome}. `:''}${assunto?`Assunto: ${assunto}. `:''}${msg||''}`.trim();
+    }
+    window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`,'_blank','noopener');
+  }); }
 });
