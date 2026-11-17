@@ -1,4 +1,19 @@
+# Buscadores e assistentes de IA liberados: aparecer em respostas do
+# ChatGPT, Claude, Perplexity e Gemini ajuda a ser encontrada (GEO).
 User-agent: *
+Allow: /
+Disallow: /404.html
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://taismuller-arquiteta.netlify.app/sitemap.xml

@@ -2,22 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://taismuller-arquiteta.netlify.app/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-11-17</lastmod>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://taismuller-arquiteta.netlify.app/projetos.html</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-11-17</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://taismuller-arquiteta.netlify.app/servicos.html</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-11-17</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://taismuller-arquiteta.netlify.app/sobre.html</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-11-17</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://taismuller-arquiteta.netlify.app/contato.html</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-11-17</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://taismuller-arquiteta.netlify.app/atendimento-regiao.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://taismuller-arquiteta.netlify.app/arquiteta-sao-martinho.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://taismuller-arquiteta.netlify.app/arquiteta-boa-vista-do-burica.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://taismuller-arquiteta.netlify.app/arquiteta-tres-de-maio.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://taismuller-arquiteta.netlify.app/arquiteta-independencia.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://taismuller-arquiteta.netlify.app/arquiteta-horizontina.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://taismuller-arquiteta.netlify.app/arquiteta-santa-rosa.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://taismuller-arquiteta.netlify.app/privacidade.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <priority>0.2</priority>
   </url>
 </urlset>

@@ -1,0 +1,172 @@
+{
+  "_leia": "Fonte das páginas locais (arquiteta-<cidade>.html), da página de região, do JSON-LD do escritório, do sitemap.xml e do llms.txt. Depois de editar: python scripts/gerar-paginas-locais.py. Distâncias e coordenadas: centroides oficiais do IBGE (API de malhas), em linha reta a partir de São Martinho, calculadas em 17/11/2026.",
+
+  "site": "https://taismuller-arquiteta.netlify.app",
+  "escritorio": {
+    "nome": "Taís Regina Müller Arquitetura",
+    "arquiteta": "Taís Regina Müller",
+    "cau": "",
+    "cidade": "São Martinho",
+    "localidade": "Flor da Serra",
+    "uf": "RS",
+    "telefone": "+55 55 99634-1317",
+    "telefoneExibicao": "(55) 99634-1317",
+    "whatsapp": "5555996341317",
+    "email": "taisreginamuller@gmail.com",
+    "instagram": "https://www.instagram.com/arquiteta.taismuller/"
+  },
+
+  "servicos": [
+    ["Consultoria", "Análise de viabilidade, brief e direcionamento estratégico."],
+    ["Estudo preliminar", "Tradução do programa em conceitos espaciais e volumétricos."],
+    ["Anteprojeto", "Desenvolvimento das soluções com materiais e sistemas."],
+    ["Projeto executivo", "Detalhamentos técnicos e compatibilização."],
+    ["Interiores", "Ambientes funcionais com identidade e conforto."],
+    ["Acompanhamento de obra", "Supervisão técnica e qualidade na execução."]
+  ],
+
+  "cidades": [
+    {
+      "slug": "sao-martinho",
+      "nome": "São Martinho",
+      "ibge": 4319109,
+      "km": 0,
+      "lat": -27.729,
+      "lng": -53.9532,
+      "vizinhas": ["Sede Nova", "São Valério do Sul", "Alegria", "Campo Novo", "Boa Vista do Buricá", "Humaitá"],
+      "descricao": "Arquiteta em São Martinho - RS: projetos residenciais, comerciais e de interiores com neuroarquitetura. Escritório em Flor da Serra, reuniões presenciais ou online.",
+      "intro": [
+        "Sou Taís Regina Müller e meu escritório fica em Flor da Serra, no interior de São Martinho. É daqui que saem os projetos residenciais, comerciais e de interiores que faço para a cidade e para a região.",
+        "Para quem é de São Martinho, tudo fica mais perto: as reuniões podem ser presenciais ou online, e a visita ao terreno ou ao imóvel entra na agenda sem complicação."
+      ],
+      "destaque": [
+        "Da conversa inicial à obra, perto de você",
+        "Atendo desde a casa nova no terreno da família até a reforma de um único ambiente. Com a obra na cidade, o acompanhamento técnico fica mais próximo, com visitas periódicas combinadas no contrato."
+      ],
+      "faq": [
+        ["Onde fica o escritório em São Martinho?", "Em Flor da Serra, no interior de São Martinho - RS. Os encontros são combinados com antecedência pelo WhatsApp (55) 99634-1317, e também atendo por videochamada."],
+        ["Você acompanha obras em São Martinho?", "Sim. O acompanhamento técnico é feito com visitas periódicas definidas no contrato, e as dúvidas do dia a dia da obra são resolvidas online."]
+      ]
+    },
+    {
+      "slug": "boa-vista-do-burica",
+      "nome": "Boa Vista do Buricá",
+      "ibge": 4302204,
+      "km": 16,
+      "lat": -27.6748,
+      "lng": -54.0998,
+      "vizinhas": ["São José do Inhacorá", "Nova Candelária", "Sede Nova", "Alegria", "Humaitá", "São Martinho"],
+      "descricao": "Arquiteta para Boa Vista do Buricá - RS: projetos residenciais, comerciais, reformas e interiores. Escritório a 16 km, em São Martinho, com visitas presenciais e reuniões online.",
+      "intro": [
+        "Boa Vista do Buricá fica a cerca de 16 km de São Martinho, onde está meu escritório. Pela proximidade, atendo a cidade como quem está ao lado: reuniões online quando for mais prático e visitas presenciais ao terreno, ao imóvel e à obra.",
+        "Faço projetos residenciais, comerciais e de interiores, aplicando a neuroarquitetura para criar espaços que favorecem o bem-estar de quem vive e trabalha neles."
+      ],
+      "destaque": [
+        "Casa nova, reforma ou um ambiente só",
+        "Não precisa ser uma obra grande para começar: consultoria, interiores de um cômodo e reformas também fazem parte do trabalho. O primeiro passo é uma conversa sobre o que você precisa."
+      ],
+      "faq": [
+        ["Você atende em Boa Vista do Buricá?", "Sim. Meu escritório fica em São Martinho, a cerca de 16 km. As reuniões podem ser online e as visitas técnicas são feitas presencialmente."],
+        ["Como funciona a primeira conversa?", "Pelo WhatsApp ou por videochamada: você conta sobre o terreno, a reforma ou o ambiente, e eu explico as etapas. Depois do briefing, envio a proposta com escopo, etapas e prazos."]
+      ]
+    },
+    {
+      "slug": "tres-de-maio",
+      "nome": "Três de Maio",
+      "ibge": 4321808,
+      "km": 31,
+      "lat": -27.7316,
+      "lng": -54.2654,
+      "vizinhas": ["São José do Inhacorá", "Horizontina", "Boa Vista do Buricá", "Tucunduva", "Nova Candelária", "Independência"],
+      "descricao": "Arquiteta para Três de Maio - RS: projetos residenciais, comerciais e de interiores com neuroarquitetura. Reuniões online e visitas ao terreno, ao imóvel e à obra.",
+      "intro": [
+        "Para quem procura arquiteta em Três de Maio, atendo a cidade a partir de São Martinho, a cerca de 31 km. O projeto avança em reuniões online, e as etapas que pedem presença, como a visita ao terreno, o levantamento do imóvel e o acompanhamento da obra, são feitas no local.",
+        "Trabalho com projetos residenciais, comerciais e de interiores, com foco em neuroarquitetura: luz natural, conforto e organização pensados para o bem-estar."
+      ],
+      "destaque": [
+        "Projeto pronto para a obra",
+        "O projeto executivo sai detalhado e compatibilizado, para que a construtora, o empreiteiro ou o marceneiro de Três de Maio executem com segurança e sem improviso."
+      ],
+      "faq": [
+        ["Você atende em Três de Maio?", "Sim, com reuniões online e visitas presenciais ao terreno, ao imóvel e à obra. Meu escritório fica em São Martinho, a cerca de 31 km."],
+        ["Posso contratar só o projeto de interiores?", "Sim. Interiores é um serviço à parte: ambientes funcionais, com identidade e conforto, do layout à escolha de materiais."]
+      ]
+    },
+    {
+      "slug": "independencia",
+      "nome": "Independência",
+      "ibge": 4310405,
+      "km": 29,
+      "lat": -27.9012,
+      "lng": -54.1804,
+      "vizinhas": ["Inhacorá", "Alegria", "Giruá", "São José do Inhacorá", "Três de Maio", "Boa Vista do Buricá"],
+      "descricao": "Arquiteta para Independência - RS: consultoria, projetos residenciais, comerciais e de interiores. Reuniões online e visitas técnicas na cidade.",
+      "intro": [
+        "Atendo Independência a partir do meu escritório em São Martinho, a cerca de 29 km. Você não precisa se deslocar: as reuniões de projeto acontecem online, e eu vou até o terreno, o imóvel ou a obra quando a etapa pede.",
+        "Faço projetos residenciais, comerciais e de interiores, com neuroarquitetura aplicada ao conforto e ao bem-estar de quem usa cada espaço."
+      ],
+      "destaque": [
+        "Consultoria antes de comprar ou reformar",
+        "Antes de fechar a compra de um terreno ou começar uma reforma, uma consultoria ajuda a avaliar a viabilidade e a evitar retrabalho. Ela também pode ser o ponto de partida do projeto completo."
+      ],
+      "faq": [
+        ["Você atende em Independência?", "Sim. As reuniões são online e as visitas técnicas e o acompanhamento de obra são feitos em Independência. Meu escritório fica em São Martinho, a cerca de 29 km."],
+        ["Preciso ir até São Martinho para as reuniões?", "Não. As reuniões podem ser todas online. As visitas ao terreno, ao imóvel e à obra são feitas na cidade, conforme o contrato."]
+      ]
+    },
+    {
+      "slug": "horizontina",
+      "nome": "Horizontina",
+      "ibge": 4309605,
+      "km": 37,
+      "lat": -27.5903,
+      "lng": -54.2987,
+      "vizinhas": ["Doutor Maurício Cardoso", "Tucunduva", "Três de Maio", "Nova Candelária", "Crissiumal", "Boa Vista do Buricá"],
+      "descricao": "Arquiteta para Horizontina - RS: projetos residenciais, comerciais e de interiores com neuroarquitetura. Atendimento online e visitas presenciais na cidade.",
+      "intro": [
+        "Horizontina fica a cerca de 37 km de São Martinho, onde está meu escritório, e faz parte da região que atendo com reuniões online e visitas presenciais ao terreno, ao imóvel e à obra.",
+        "Crio projetos residenciais, comerciais e de interiores com identidade, precisão técnica e foco no bem-estar de quem vive cada espaço."
+      ],
+      "destaque": [
+        "Arquitetura que cuida de quem usa o espaço",
+        "A neuroarquitetura estuda como luz, cores, materiais e organização influenciam o humor, o descanso e a concentração. Aplico esses princípios em casas, escritórios e espaços comerciais."
+      ],
+      "faq": [
+        ["Você atende em Horizontina?", "Sim, com reuniões online e visitas presenciais conforme as etapas do projeto e da obra. Meu escritório fica em São Martinho, a cerca de 37 km."],
+        ["O que é neuroarquitetura na prática?", "É usar o que se sabe sobre como o ambiente afeta as pessoas para decidir luz, cores, materiais e layout. Na prática: quartos que favorecem o descanso, áreas de trabalho que ajudam a concentração e espaços comerciais mais acolhedores."]
+      ]
+    },
+    {
+      "slug": "santa-rosa",
+      "nome": "Santa Rosa",
+      "ibge": 4317202,
+      "km": 56,
+      "lat": -27.8644,
+      "lng": -54.497,
+      "vizinhas": ["Tuparendi", "Senador Salgado Filho", "Santo Cristo", "Cândido Godói", "Ubiretama", "Tucunduva"],
+      "descricao": "Arquiteta para Santa Rosa - RS: projetos residenciais, comerciais e de interiores com neuroarquitetura. Reuniões online e visitas programadas ao terreno e à obra.",
+      "intro": [
+        "Atendo clientes de Santa Rosa a partir de São Martinho, a cerca de 56 km. A maior parte do projeto acontece online, por videochamada, e as visitas presenciais ao terreno, ao imóvel e à obra são programadas de acordo com as etapas.",
+        "Faço projetos residenciais, comerciais e de interiores, unindo precisão técnica e neuroarquitetura para criar espaços confortáveis, funcionais e com identidade."
+      ],
+      "destaque": [
+        "Processo claro do início ao fim",
+        "Briefing, conceito, projeto, executivo e obra: você sabe em que etapa está, o que vem a seguir e quando. Cada etapa tem entregas e prazos definidos na proposta."
+      ],
+      "faq": [
+        ["Você atende em Santa Rosa?", "Sim. O projeto é conduzido online e as visitas presenciais são programadas conforme as etapas. Meu escritório fica em São Martinho, a cerca de 56 km."],
+        ["Como funcionam as visitas se o escritório não é em Santa Rosa?", "São planejadas junto com o cronograma do projeto e da obra e combinadas na proposta. Entre uma visita e outra, o acompanhamento continua online."]
+      ]
+    }
+  ],
+
+  "regiao": [
+    ["São Martinho", 0], ["Sede Nova", 10], ["São Valério do Sul", 11], ["Alegria", 14], ["Campo Novo", 14],
+    ["Boa Vista do Buricá", 16], ["Humaitá", 17], ["São José do Inhacorá", 17], ["Inhacorá", 21], ["Bom Progresso", 23],
+    ["Nova Candelária", 23], ["Braga", 26], ["Santo Augusto", 27], ["Chiapetta", 29], ["Independência", 29],
+    ["Coronel Bicaco", 31], ["Três de Maio", 31], ["Crissiumal", 32], ["Três Passos", 32], ["Miraguaí", 34],
+    ["Redentora", 36], ["Horizontina", 37], ["Tiradentes do Sul", 43], ["Tenente Portela", 44],
+    ["Dois Irmãos das Missões", 45], ["Esperança do Sul", 45], ["Nova Ramada", 46], ["Giruá", 48], ["Tucunduva", 48],
+    ["Doutor Maurício Cardoso", 49], ["Erval Seco", 49], ["Catuípe", 50], ["Santa Rosa", 56]
+  ]
+}
